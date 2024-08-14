@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-08-14T12:50:33 IST" name="Default suite" finished-at="2024-08-14T12:50:39 IST" duration-ms="5809">
+    <groups>
+    </groups>
+    <test started-at="2024-08-14T12:50:33 IST" name="Default test" finished-at="2024-08-14T12:50:39 IST" duration-ms="5809">
+      <class name="altdrx_Registration_Api.alt_registration">
+        <test-method is-config="true" signature="setup()[pri:0, instance:altdrx_Registration_Api.alt_registration@6379eb]" started-at="2024-08-14T12:50:33 IST" name="setup" finished-at="2024-08-14T12:50:34 IST" duration-ms="1003" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Existingemail()[pri:0, instance:altdrx_Registration_Api.alt_registration@6379eb]" started-at="2024-08-14T12:50:34 IST" name="Existingemail" finished-at="2024-08-14T12:50:38 IST" duration-ms="3601" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Existingemail -->
+        <test-method signature="Existingphone()[pri:0, instance:altdrx_Registration_Api.alt_registration@6379eb]" started-at="2024-08-14T12:50:38 IST" name="Existingphone" finished-at="2024-08-14T12:50:38 IST" duration-ms="159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Existingphone -->
+        <test-method signature="emptyemailparameter()[pri:0, instance:altdrx_Registration_Api.alt_registration@6379eb]" started-at="2024-08-14T12:50:38 IST" name="emptyemailparameter" finished-at="2024-08-14T12:50:38 IST" duration-ms="141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyemailparameter -->
+        <test-method signature="emptynameparameter()[pri:0, instance:altdrx_Registration_Api.alt_registration@6379eb]" started-at="2024-08-14T12:50:38 IST" name="emptynameparameter" finished-at="2024-08-14T12:50:38 IST" duration-ms="199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptynameparameter -->
+        <test-method signature="emptyphoneparameter()[pri:0, instance:altdrx_Registration_Api.alt_registration@6379eb]" started-at="2024-08-14T12:50:38 IST" name="emptyphoneparameter" finished-at="2024-08-14T12:50:38 IST" duration-ms="131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyphoneparameter -->
+        <test-method signature="invalidemail()[pri:0, instance:altdrx_Registration_Api.alt_registration@6379eb]" started-at="2024-08-14T12:50:38 IST" name="invalidemail" finished-at="2024-08-14T12:50:38 IST" duration-ms="114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidemail -->
+        <test-method signature="invalidphone()[pri:0, instance:altdrx_Registration_Api.alt_registration@6379eb]" started-at="2024-08-14T12:50:38 IST" name="invalidphone" finished-at="2024-08-14T12:50:39 IST" duration-ms="222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidphone -->
+        <test-method signature="successfulregistration()[pri:0, instance:altdrx_Registration_Api.alt_registration@6379eb]" started-at="2024-08-14T12:50:39 IST" name="successfulregistration" finished-at="2024-08-14T12:50:39 IST" duration-ms="161" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Success message is incorrect expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Success message is incorrect expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at altdrx_Registration_Api.alt_registration.successfulregistration(alt_registration.java:40)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successfulregistration -->
+      </class> <!-- altdrx_Registration_Api.alt_registration -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
